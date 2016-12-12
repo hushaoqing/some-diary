@@ -32,7 +32,7 @@ def getActor(res):
         pass
     return ac
 actor = getActor(res)
-
+# list 内嵌 tuple, tuple 不重复，但tuple中的值重复
 def remove_duplicate(actor):
     def merge(kv, index, actor):
         v = []
