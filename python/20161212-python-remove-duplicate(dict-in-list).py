@@ -10,7 +10,7 @@ sys.setdefaultencoding('utf-8')
 
 
 _replace = lambda a:re.subn(r'\[[\d-]*\]', '', a.replace(" ", "").replace("\n", "").replace("\t", "").replace("，", ",").replace("\\", ",").replace("、", ",").strip())[0]
-url = "http://baike.baidu.com/item/%E8%BF%98%E7%8F%A0%E6%A0%BC%E6%A0%BC/903367"
+url = "http://baike.baidu.com/item/%E4%BB%99%E5%89%91%E5%A5%87%E4%BE%A0%E4%BC%A0%E4%B8%89/5128963"
 res = requests.get(url).content
 def getActor(res):
     actorList, roleList = [], []
