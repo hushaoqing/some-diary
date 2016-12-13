@@ -84,14 +84,14 @@ class ExpressionEvaluator:
             return int(self.tok.value)
         elif self._accept("LPAREN"):
             exprval = self.expr()
-            self._accept('"RPAREN')
+            self._accept('RPAREN')
             return exprval
         else:
             raise SyntaxError("Expected NUMBER or LPRAREN")
 
 if __name__ == '__main__':
     e = ExpressionEvaluator()
-    print e.parse('2*3+1-3')
+    print e.parse('2+(3+1)+3')
 
 
 # import re
