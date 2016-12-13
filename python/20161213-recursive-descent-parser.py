@@ -3,7 +3,14 @@
 
 '''
     a simple calculator using recursive descent parser
+
+    EBNF:
+        expr ::= term { (+|-) term }*
+        term ::= factor { (*|/) factor }*
+        factor ::= ( expr )
+                | NUM
 '''
+
 import re
 import collections
 
