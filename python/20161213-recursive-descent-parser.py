@@ -1,6 +1,9 @@
 # !usr/bin/python
 # coding=utf-8
 
+'''
+    a simple calculator using recursive descent parser
+'''
 import re
 import collections
 
